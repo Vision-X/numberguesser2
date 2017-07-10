@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<html>
+  <head>
+    <title>NumberGuesser2</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="modals.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  </head>
+  <body id='bodyyy'>
+    <header>
+      <h1>Number <span>Guesser</span></h1>
+    </header>
+
+      <div class="modal" id="">
+        <div class="hidden-div modal" id="show-hide">
+          <button type="button" id="close-div">X</button>
+          <h2> Rules </h2>
+            <ol><span>There are 4 rounds</span>
+              <li>Round 1: Guess a number between 1 and 100</li>
+              <li>Round 2: You adjust the min/max boundaries (+/-10) guess within that range</li>
+              <li>Round 3: Adjust the min/max boundaries to any integer value you want, guess within that range</li>
+              <li>Round 4: The ultimate guesing of numbers lolololol</li>
+            </ol>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-two">
+        <div class="hidden-div-win" id="win-modal">
+          <button type="button" id="close-div2">X</button>
+          <h2>Congrats! You're a Winner!</h2>
+        </div>
+      </div>
+
+      <button type="button" id='game-rules-btn' name="Rules">Rules</button>
+
+      <div class='hidden' id='level-two'>
+        <p> ROUND <span id="round-what"></span></p>
+        <input type="number" name="enter-min" id="set-min" aria-label="User input number" />
+        <button type="submit" id="min-range-btn">Min</button>
+        <input type="number" name="enter-max" id="set-max" aria-label="User input number" />
+        <button type="submit" id="max-range-btn">Max</button>
+      </div>
+
+    <main>
+
+      <section class="input-section">
+        <form onsubmit="return false">
+          <article class="input-container">
+            <input type="number" class="guess-entry" id="guess-form" aria-label="User input area" placeholder="Enter your guess" onkeyup="buttonsOn()" />
+          </article>
+        </form>
+
+          <article class="button-box">
+            <button name="guess" id="guess-button" type="button" class="enter-btn btn" disabled>Guess</button>
+            <button type="reset" class="clear-btn btn" id="clear-button" disabled >Clear</button>
+          </article>
+      </section>
+
+      <section class="guess-container" id="contain-guess">
+        <p id="last-guess">Enter a guess</p>
+        <p id="display-guess"> # </p>
+        <p id="display-high-low">Good Luck!</p>
+      </section>
+
+      <section id="reset-game">
+        <article class="reset-container">
+          <button name="reset" id="reset-button" disabled>Reset</button>
+        </article>
+      </section>
+
+      <!-- <div id='level-two' class='hidden'>
+        <p> ROUND <span id="round-what"></span></p>
+        <input type="number" name="enter-min" id="set-min" placeholder="Enter the min" aria-label="User input number" />
+        <button type="submit" id="min-range-btn">Min</button>
+        <input type="number" name="enter-max" id="set-max" placeholder="Enter the max" aria-label="User input number" />
+        <button type="submit" id="max-range-btn">Max</button>
+      </div> -->
+
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

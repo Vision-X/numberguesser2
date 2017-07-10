@@ -1,0 +1,171 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: #404041;
+  font-size: 32px;
+  height: 12.5vh;
+  text-align: center;
+}
+
+h1 {
+  color: #ED458B;
+}
+
+h1 span {
+  color: #E6E7E8;
+  font-weight: 300;
+}
+
+main {
+  margin: 0 auto;
+  width: 40%;
+  height: 87.5vh;
+}
+
+input::-webkit-input-placeholder {
+  color: #D0d2d3;
+  font-weight: 300;
+}
+
+input {
+  font-size: 30px;
+  font-weight: 300;
+  height: 50px;
+  margin: 50px 0 0 0;
+  width: 70%;
+  color: #404041;
+}
+
+input:focus,
+input:hover {
+  /*border: 2px solid ##EB008B;*/
+  outline: none !important;
+  border-color: #EB008B;
+  box-shadow: 0 0 10px black;
+}
+
+.button-box {
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  background-color: #929497;
+  border: none;
+  border-radius: 100px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 300;
+  height: 50px;
+  width: 33%;
+}
+
+button:hover {
+  background-color: #eb008b;
+}
+
+button:disabled {
+  background-color: #D0D2D3;
+  border: none;
+  border-radius: 100px;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 300;
+  height: 50px;
+  width: 33%;
+}
+
+button:disabled:hover {
+  background-color: #D0D2D3;
+}
+
+button:hover {
+  background-color: #eb008b;
+}
+
+button:focus {
+  outline:0;
+}
+
+.enter-btn {
+  margin-left: 6px;
+  margin-right: 28px;
+}
+
+p {
+  color: #404041;
+  font-size: 30px;
+  text-align: center;
+}
+
+#game-rules-btn {
+  font-size: 22px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  box-shadow: none;
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+  width: 150px;
+  background-color: gray;
+  display: block;
+  cursor: pointer;
+}
+
+#last-guess {
+  padding-top: 50px;
+}
+
+.display-container {
+  height: 50vh;
+}
+
+#display-guess {
+  color: #EB008B;
+  font-size: 150px;
+}
+
+.reset-container {
+  margin: 50px auto;
+  text-align: center;
+  width: 80%;
+}
+
+#reset-button {
+  height: 40px;
+  width: 85%;
+}
+
+.input-container {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.guess-container {
+  width: 100%;
+}
+
+#level-two {
+  position: absolute;
+  top: 25vh;
+  left: 25px;
+  width: 30%;
+  text-align: center;
+}
+
+#level-two button {
+  margin-top:10px;
+}
+#level-two input {
+  width: 60%;
+}

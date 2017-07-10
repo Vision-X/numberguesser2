@@ -1,0 +1,112 @@
+.hidden {
+  visibility: hidden;
+}
+
+.hidden-div,
+.hidden-div-win {
+  display: none;
+}
+
+h2 {
+  color: white;
+  font-size: 32px;
+}
+
+ol span {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  margin-left: 50px;
+}
+li {
+  color: white;
+  font-size: 26px;
+}
+
+#show-hide {
+  background-color: #404041;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  color: white;
+  display: none;
+  height: 50vh;
+  opacity: .9;
+  padding-left: 2%;
+  padding-right: 2%;
+  position: fixed;
+  left: 25%;
+  right: 25%;
+  width: 50%;
+  z-index: 10;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+
+}
+
+#close-div {
+  margin-right: 0;
+  width: 54px;
+  background-color: gray;
+  position:absolute;
+  top: 8px;
+  right: 8px;
+}
+
+#close-div:hover {
+  background-color: #EB008B;
+  cursor: pointer;
+}
+
+#win-modal {
+  position: fixed;
+  top: 45%;
+  left: 25%;
+  background-color: #404041;
+  border-radius: 60px;
+  height: 25vh;
+  margin: auto;
+  opacity: .9;
+  padding: 0;
+  text-align: center;
+  width: 50%;
+  z-index: 11;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatebottom;
+  animation-duration: 0.4s;
+}
+
+#win-modal h2 {
+  position: absolute;
+  left: 15%;
+  top: 40%;
+}
+
+
+
+/* ////////////////// Add Animation ////////////////// */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:12.5vh; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:12.5vh; opacity:1}
+}
+
+@-webkit-keyframes animatebottom {
+    from {bottom:-300px; opacity:0}
+    to {bottom:65%; opacity:1}
+}
+
+@keyframes animatebottom {
+    from {bottom:-300px; opacity:0}
+    to {bottom:65%; opacity:1}
+}
