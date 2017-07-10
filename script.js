@@ -27,18 +27,19 @@ window.onload = function() {
   gameRound();
 }
 
-window.onclick = function(event) {
-  if (event.target == modalOne && !hideDiv.classList.contains('hidden')) {
-    hideDiv.classList.toggle('hidden');
+  window.onclick = function(event) {
+    if (event.target == modalOne &&  !hideDiv.classList.contains('hidden')) {
+      hideDiv.classList.toggle('hidden');
+    }
+    if (event.target == modalOne && !winModal.classList.contains('hidden')) {
+      winModal.classList.toggle('hidden');
+    }
   }
-  if (event.target == modalOne && !winModal.classList.contains('hidden')) {
-    winModal.classList.toggle('hidden');
-  }
-}
 
 ////////////Event Listeners ////////////
 rulesBtn.addEventListener('click', function() {
   toggleRules();
+
 })
 
 divBtn.addEventListener('click', function() {
@@ -69,11 +70,13 @@ guessButton.addEventListener('click', function(e) {
   userInput.value = '';
   document.getElementById('guess-button').setAttribute( "disabled", true);
   document.getElementById('clear-button').setAttribute("disabled", true);
+
 })
 
 //clear button
 clearButton.addEventListener('click', function() {
   userInput.value='';
+  toggleWin();
 })
 
 //reset button functionality
@@ -217,12 +220,12 @@ function updateGuess(results, input) {
 
 function toggleRules() {
     var x = document.getElementById('show-hide');
-    toggleModalDisplay(x)
+    toggleModalDisplay(x);
 }
 
 function toggleWin() {
     var y = document.getElementById('win-modal');
-    toggleModalDisplay(y)
+    toggleModalDisplay(y);
 }
 
 function toggleModalDisplay(el) {
